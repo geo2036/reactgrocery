@@ -9,6 +9,7 @@ const LogoWrapper = styled.div`
     justify-content: center;
     text-transform: uppercase;
     font-size: 1.1em;
+    padding: 1em;
 
     & > * {
         margin: 0.3em 0.2em;

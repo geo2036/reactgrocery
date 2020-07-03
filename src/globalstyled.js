@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
       text-rendering: optimizeLegibility;
 
       @media (max-width: ${({ theme }) => theme.mobile }){
-        max-width: 100%;
+        max-width: 90%;
       }
   }
 
