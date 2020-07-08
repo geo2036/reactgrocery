@@ -14,7 +14,8 @@ export const GlobalStyles = createGlobalStyle`
       background: ${({ theme }) => theme.background };
       color: ${({ theme }) => theme.primaryDark };
       max-width: 80%;
-      min-width:400px;
+      margin: 0 auto;
+      min-width:300px;
       font-family: 'Montserrat', sans-serif;
       text-rendering: optimizeLegibility;
 

@@ -3,7 +3,7 @@ const light = {
     primaryDark: "#264653",
     accentDark: "#E9C46A",
     primaryLight: "whitesmoke",
-    primaryHover: '#2A9D8F',
+    primaryHover: '#223f4a',
     mobile: '576px',
 }
 

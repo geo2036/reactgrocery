@@ -2,14 +2,16 @@ import React from 'react';
 import { NavlinksStyled } from "../Navlinks/NavlinksStyled";
 import { NavlinksWrapper } from "../Navlinks/NavlinksWrapper";
 import Burger from "../Burger/Burger";
+import SideBar from "../SideBar/SideBar";
 
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const MobileToolbar = () => {
+const MobileToolbar = ({ open, setOpen }) => {
     return (
+        <>
         <NavlinksWrapper>
             <NavlinksStyled>
                 <FontAwesomeIcon icon={faUser} />
@@ -24,9 +26,11 @@ const MobileToolbar = () => {
 
             <NavlinksStyled>
                 <FontAwesomeIcon icon={faSearch} />
-                <Burger />
+                <Burger open={open} setOpen={setOpen} />
             </NavlinksStyled>
-        </NavlinksWrapper>
+        </NavlinksWrapper >
+        <SideBar open={open}/>
+        </>
     )
 }
 
